@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  pushgateway:
+    build:
+      context: .  # O diretório onde o Dockerfile está localizado
+      dockerfile: Dockerfile  # O nome do Dockerfile
+    ports:
+      - "9091:9091"  # Porta exposta do PushGateway
+   
